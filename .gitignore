@@ -1,0 +1,33 @@
+# Secretos — nunca commitear
+.env
+*.key
+credentials.json
+token.json
+client_secret*.json
+
+# Estado del scheduler
+output/scheduler_state.json
+
+# Material generado (pesado, no va al repo)
+output/
+videos/
+audio/
+thumbnails/
+assets/
+*.mp4
+*.wav
+*.mp3
+*.png
+*.jpg
+
+# Modelos locales
+models/
+*.onnx
+*.pth
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+*.log

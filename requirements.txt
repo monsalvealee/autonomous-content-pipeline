@@ -1,0 +1,28 @@
+# --- Núcleo ---
+anthropic>=0.40.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# --- TTS local (Kokoro, corre en GPU) ---
+kokoro>=0.9.0
+soundfile>=0.12.1
+numpy>=1.24.0
+# Alternativa liviana: piper-tts
+
+# --- Video ---
+moviepy>=1.0.3
+# ffmpeg debe estar instalado en el sistema (apt install ffmpeg)
+# ImageMagick es necesario para los subtítulos de moviepy (apt install imagemagick)
+
+# --- Thumbnails ---
+Pillow>=10.0.0
+
+# --- YouTube Data API ---
+google-api-python-client>=2.100.0
+google-auth-oauthlib>=1.2.0
+google-auth-httplib2>=0.2.0
+
+# --- Fuentes de temas en tiempo real (opcional) ---
+# RSS y Reddit usan solo la stdlib (urllib). Google Trends es opcional:
+pytrends>=4.9.2   # solo si USE_GOOGLE_TRENDS=true
+# Notificaciones (Telegram/Discord) usan solo la stdlib — sin dependencias extra.
